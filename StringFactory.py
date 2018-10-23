@@ -5,18 +5,16 @@
 def CreateBooleanFunctions():
   #Gera um arquivo com as funções booleanas
   file = open("SudokuCheck.py","w")
-  txt = "X = [False]*1000\n\n"
-  txt += "def A():\n  return " + PeloMenosUmDigitoTodaCasa() + "\n\n"
-  txt += "def B():\n  return " + NoMaximoUmDigitoTodaCasa() + "\n\n"
-  txt += "def C():\n  return " + DigitoUnicoTodaLinha() + "\n\n"
-  txt += "def D():\n  return " + DigitoUnicoTodaColuna() + "\n\n"
-  txt += "def E():\n  return " + DigitoUnicoTodoSubgrid() + "\n\n"
-  txt += "def CheckIfValid():\n"
-  txt += "  global X\n"
+  txt = "def A(X):\n  return " + PeloMenosUmDigitoTodaCasa() + "\n\n"
+  txt += "def B(X):\n  return " + NoMaximoUmDigitoTodaCasa() + "\n\n"
+  txt += "def C(X):\n  return " + DigitoUnicoTodaLinha() + "\n\n"
+  txt += "def D(X):\n  return " + DigitoUnicoTodaColuna() + "\n\n"
+  txt += "def E(X):\n  return " + DigitoUnicoTodoSubgrid() + "\n\n"
+  txt += "def CheckIfValid(X):\n"
   txt += "  X = [False]*1000\n"
   txt += "  input_file = open('input.txt','r').read()\n\n"
-  txt += "  for p in input_file.split():\n    print(int(p))\n    X[int(p)] = True\n\n"
-  txt += "  return A() and B() and C() and D() and E()\n\n"
+  txt += "  for p in input_file.split():\n    X[int(p)] = True\n\n"
+  txt += "  return A(X) and B(X) and C(X) and D(X) and E(X)\n\n"
   file.write(txt)
   
 def PeloMenosUmDigitoEmCasa(i,j):
