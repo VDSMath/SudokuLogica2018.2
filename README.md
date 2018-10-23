@@ -1,6 +1,7 @@
 # Implementação de Sudoku usando Lógica Proposicional
 ## UFRJ - BCC - Lógica - 2018/2
 
+
 ### Descrição
 O trabalho consiste em implementar o jogo sudoku conforme apresentado no estudo dirigido.
 
@@ -20,3 +21,8 @@ Além do programa, deve ser entregue um relatório que explica o funcionamento d
 * Gabriel Raposo
 * Matheus Vinicius
 * Pedro Nascimento
+
+### Resultados
+Relatório:
+
+https://docs.google.com/document/d/1g4s0zMWsTHGY5EcL8m9mvI8yHpPLHXw4gcXCN6e9EYg/edit?usp=sharing
