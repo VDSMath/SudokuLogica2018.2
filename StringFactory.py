@@ -11,9 +11,6 @@ def CreateBooleanFunctions():
   txt += "def D(X):\n  return " + DigitoUnicoTodaColuna() + "\n\n"
   txt += "def E(X):\n  return " + DigitoUnicoTodoSubgrid() + "\n\n"
   txt += "def CheckIfValid(X):\n"
-  txt += "  X = [False]*1000\n"
-  txt += "  input_file = open('input.txt','r').read()\n\n"
-  txt += "  for p in input_file.split():\n    X[int(p)] = True\n\n"
   txt += "  return A(X) and B(X) and C(X) and D(X) and E(X)\n\n"
   file.write(txt)
   

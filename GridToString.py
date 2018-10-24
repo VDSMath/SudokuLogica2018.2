@@ -20,7 +20,8 @@ def SaveGrid(X):
 def FindSolutions(X):
   auxX = [False] * 1000;
   current = 0
-  while not(auxX[990]):
+  maxCurrent = 0
+  while not(auxX[970]):
     
     if not(auxX[999-current]):
       auxX[999-current] = True
@@ -29,7 +30,9 @@ def FindSolutions(X):
     else:
       auxX[999-current] = False
       current = current + 1
-      
+    if current > maxCurrent:
+      maxCurrent = current
+      print("Current: X[" + str(999 - maxCurrent) + "]")
   return
 
 def ReplaceAndCheck(X, auxX):
