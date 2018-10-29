@@ -1,3 +1,7 @@
+#TRABALHO 1 - ESTUDO DIRIGIDO: SUDOKU
+#GRUPO: Gabriel Raposo(115117041), Matheus Vinicius(116023504), Pedro Nascimento(116037448)
+#PROFESSOR: Joao Carlos DISCIPLINA: Logica PERIODO: 2018/2
+
 from SudokuCheck import CheckIfValid
 
 SAVE_PATH = "Maps/"
@@ -18,7 +22,7 @@ def SaveGrid(X):
   currentMap += 1
   
 def FindSolutions(X):
-  auxX = [False] * 1000;
+  auxX = [False] * 1000
   current = 0
   maxCurrent = 0
   while not(auxX[970]):

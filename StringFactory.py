@@ -1,5 +1,5 @@
 #TRABALHO 1 - ESTUDO DIRIGIDO: SUDOKU
-#GRUPO: Gabriel Raposo, Matheus Vinicius, Pedro Nascimento(116037448)
+#GRUPO: Gabriel Raposo(115117041), Matheus Vinicius(116023504), Pedro Nascimento(116037448)
 #PROFESSOR: Joao Carlos DISCIPLINA: Logica PERIODO: 2018/2
 
 def CreateBooleanFunctions():
@@ -113,4 +113,5 @@ def DigitoUnicoTodoSubgrid():
         expression += " and "
   expression += ")"
   return expression
-    
+  
+CreateBooleanFunctions()
